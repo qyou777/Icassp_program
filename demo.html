@@ -4,35 +4,17 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Single-Codec: Demo Page</title>
-<style>
-  body{font-family:Arial, sans-serif; margin:0; line-height:1.6;}
-  .container{max-width:1000px; margin:0 auto; padding:30px;}
-  h1{color:#1f9d55; text-align:center;}
-  h2{color:#1f9d55; margin-top:40px;}
-  .authors{text-align:center; color:#666; margin-bottom:20px;}
-  a{color:#2563eb;}
-  .toc{margin:20px 0;}
-  .toc h2{margin-bottom:10px;}
-  .grid-header, .grid-row{
-    display:grid; gap:8px; align-items:center;
-    grid-template-columns: repeat(var(--cols), minmax(140px,1fr));
-    margin:6px 0;
-  }
-  .grid-header{font-weight:bold;}
-  .cell{background:#f3f4f6; padding:8px; border-radius:8px;}
-  audio{width:100%;}
-  @media(max-width:700px){
-    .grid-header, .grid-row{grid-template-columns:1fr;}
-  }
-</style>
+<link rel="stylesheet" href="demostyles.css">
 </head>
 <body>
-<div class="container">
+<div class="header-container">
   <h1>Single-Codec: Single-Codebook Speech Codec towards High-Performance Speech Generation</h1>
   <div class="authors">
     Hanzhao Li, Liumeng Xue, Haohan Guo, Xinfa Zhu, Yuanjun Lv, Lei Xie, Yunlin Chen, Hao Yin, Zhifei Li
   </div>
+</div>
 
+<div class="content">
   <div class="toc">
     <h2>0. Contents</h2>
     <ol>

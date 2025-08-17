@@ -1,0 +1,78 @@
+/* 主体样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea; /* 页面背景 */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 标题和作者的背景 */
+.header-container {
+    background: linear-gradient(to right, #63a2a0, #1e4f59); /* 蓝绿渐变背景 */
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.authors {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* 正文部分 */
+.content {
+    background-color: #eaeaea;/* 设置正文部分为白色背景 */
+    padding: 30px;
+    max-width: 990px; 
+    margin: 0 auto;
+}
+
+/* 目录样式 */
+.toc {
+    margin: 20px 0;
+}
+
+.toc h2 {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #2563eb;
+}
+
+/* 音频样本网格 */
+.grid-header, .grid-row {
+    display: grid;
+    gap: 8px;
+    align-items: center;
+    grid-template-columns: repeat(var(--cols), minmax(140px, 1fr));
+    margin: 6px 0;
+}
+
+.grid-header {
+    font-weight: bold;
+}
+
+.cell {
+    background: #f3f4f6;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+audio {
+    width: 100%;
+}
+
+/* 响应式设计 */
+@media(max-width: 700px) {
+    .grid-header, .grid-row {
+        grid-template-columns: 1fr;
+    }
+}
