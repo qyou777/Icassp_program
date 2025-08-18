@@ -1,3 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Single-Codec: Demo Page</title>
+  <!-- 确认这个路径与文件夹一致：根目录就用 ./demostyles.css -->
+  <link rel="stylesheet" href="./demostyles.css">
+</head>
+<body>
+
+  <div class="header-container">
+    <h1>Single-Codec: Single-Codebook Speech Codec towards High-Performance Speech Generation</h1>
+  </div>
+
+  <div class="content">
+    <div class="toc">
+      <h2>0. Contents</h2>
+      <ol>
+        <li><a href="#abs">Abstract</a></li>
+        <li><a href="#ablation">Samples on Audio Reconstruction: Ablation Study</a></li>
+        <li><a href="#compare">Samples on Audio Reconstruction: Comparison Study</a></li>
+        <li><a href="#tts">Audio Samples: VALL-E Zero-shot TTS</a></li>
+      </ol>
+    </div>
+
+    <section id="abs">
+      <h2>1. Abstract</h2>
+      <p>Put your abstract here. （这里先写简介，音频以后再补）</p>
+    </section>
+
+    <section id="ablation">
+      <h2>2. Samples on Audio Reconstruction: Ablation Study</h2>
+      <div class="grid-header" style="--cols:5;">
+        <div>GT</div><div>VQVAE</div><div>Ref-short</div><div>Ref-long</div><div>Ref-B</div>
+      </div>
+      <div class="grid-row" style="--cols:5;">
+        <div class="cell"><audio controls src=""></audio></div>
+        <div class="cell"><audio controls src=""></audio></div>
+        <div class="cell"><audio controls src=""></audio></div>
+        <div class="cell"><audio controls src=""></audio></div>
+        <div class="cell"><audio controls src=""></audio></div>
+      </div>
+      <!-- 复制 .grid-row 增加更多行 -->
+    </section>
+
+    <section id="compare">
+      <h2>3. Samples on Audio Reconstruction: Comparison Study</h2>
+      <div class="grid-header" style="--cols:5;">
+        <div>GT</div><div>VQVAE</div><div>EnCodec-1VQ</div><div>TiCodec-1VQ</div><div>TiCodec-2VQ</div>
+      </div>
+      <div class="grid-row" style="--cols:5;">
+        <div class="cell"><audio controls src=""></audio></div>
+        <div class="cell"><audio controls src=""></audio></div>
+        <div class="cell"><audio controls src=""></audio></div>
+        <div class="cell"><audio controls src=""></audio></div>
+        <div class="cell"><audio controls src=""></audio></div>
+      </div>
+    </section>
 <section id="tts">
   <h2>4. Audio Samples: VALL-E Zero-shot TTS based on different codecs</h2>
   <table class="tts-table">
@@ -67,3 +126,4 @@
     </tbody>
   </table>
 </section>
+
